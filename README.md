@@ -2,7 +2,7 @@
 
 Este é o back-end da aplicação E-commerce desenvolvida com **Java 17**, **Spring Boot** e **MongoDB**. Ele fornece uma **API RESTful** para cadastro, listagem, atualização e remoção de produtos.
 
-> Esta API foi desenvolvida para ser consumida pelo front-end em Angular 17.
+Esta API foi desenvolvida para ser consumida pelo front-end em Angular 17. Link para o front-end: https://github.com/SamuelRicardos/ecommerce-angular
 
 ---
 

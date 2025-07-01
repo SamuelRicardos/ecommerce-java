@@ -1,7 +1,7 @@
-package com.example.ecommerce.Services;
+package com.example.ecommerce.services;
 
-import com.example.ecommerce.Model.Produtos;
-import com.example.ecommerce.Repository.ProdutoRepository;
+import com.example.ecommerce.model.Produtos;
+import com.example.ecommerce.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,9 +27,12 @@ public class ProdutoService {
 
     public Produtos atualizar(String id, Produtos produtoAtualizado) {
         return produtoRepository.findById(id).map(produto -> {
-            produto.setCodigo(produtoAtualizado.getCodigo());
             produto.setNome(produtoAtualizado.getNome());
             produto.setPreco(produtoAtualizado.getPreco());
+            produto.setCategorias(produtoAtualizado.getCategorias());
+            produto.setDescricao(produtoAtualizado.getDescricao());
+            produto.setQuantidadeEstoque(produtoAtualizado.getQuantidadeEstoque());
+            produto.setImagemUrl(produtoAtualizado.getImagemUrl());
             return produtoRepository.save(produto);
         }).orElseThrow(() -> new RuntimeException("Produto não encontrado"));
     }

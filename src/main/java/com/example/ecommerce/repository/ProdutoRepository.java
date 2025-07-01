@@ -1,10 +1,8 @@
-package com.example.ecommerce.Repository;
+package com.example.ecommerce.repository;
 
-import com.example.ecommerce.Model.Produtos;
+import com.example.ecommerce.model.Produtos;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
-
-import java.math.BigDecimal;
 
 @Repository
 public interface ProdutoRepository extends MongoRepository<Produtos, String> {

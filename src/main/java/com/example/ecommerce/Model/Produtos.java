@@ -1,4 +1,4 @@
-package com.example.ecommerce.model;
+package com.example.ecommerce.Model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

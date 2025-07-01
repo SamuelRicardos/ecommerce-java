@@ -4,7 +4,7 @@ import com.example.ecommerce.dto.AuthDTO;
 import com.example.ecommerce.dto.LoginResponseDTO;
 import com.example.ecommerce.dto.UserDTO;
 import com.example.ecommerce.infra.TokenService;
-import com.example.ecommerce.model.User;
+import com.example.ecommerce.Model.User;
 import com.example.ecommerce.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
